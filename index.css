@@ -1,0 +1,86 @@
+* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		font-family: Arial, sans-serif;
+		}
+
+	body {
+		background-image: url("Background.jpg");
+		}
+
+	#logo-div {
+		width: 100%;
+		min-height: 50px;
+		background-color: #f1b04c;
+		padding-left: 2%;
+		line-height: 20px;
+		margin-bottom: 10px;
+		display: flex;
+		align-items: center;
+		}
+
+	#logo-div img {
+		margin-right: 5px; 
+		}
+
+	#nav-div {
+		width: 100%;
+		min-height: 50px;
+		padding: 2%;
+		background-color: #ee9f27;
+		text-align: center;
+		line-height: 20px;
+		margin-bottom: 10px;
+		}
+	#nav-div a{
+		margin: 0 10px;
+		text-decoration: none;
+		color: black;
+		border: 1px;
+		padding: 2px;
+		display: inline-block;
+		cursor: pointer;
+		border-radius: 5px;
+	}
+
+	#main-div{
+		width: 100%;
+		min-height: 400px;
+		text-align: center;
+		line-height: 30px;
+		margin-bottom: 10px;
+		}
+	#sidebar-div{
+		width: 20%;
+		min-height: 400px;
+		background-color: #ec9006;
+		float: left;
+		text-align: center;
+		line-height: 400px;
+		margin-bottom: 10px;
+		}
+	#bodyarea-div{
+		width: 75%;
+		min-height: 400px;
+		background-color: #e88504;
+		float: right;
+		text-align: center;
+		line-height: 400px;
+		margin-bottom: 10px;
+		}
+		.clearfix::after{
+			content:"";
+			display: block;
+			clear: both;
+	}
+	#footer-div{
+		width: 100%;
+		min-height: 50px;
+		background-color: #e27602;
+		line-height: 25px;
+	}
+	#wrapper-div{
+		width: 80%;
+		margin: auto;
+	}
