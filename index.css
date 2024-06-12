@@ -1,86 +1,145 @@
 * {
-		margin: 0;
-		padding: 0;
-		box-sizing: border-box;
-		font-family: Arial, sans-serif;
-		}
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet Ms', sans-serif;
+}
 
-	body {
-		background-image: url("Background.jpg");
-		}
+body {
+    background-image: url("Background.jpg");
+	background-size: cover; 
+	background-position: center;
+}
 
-	#logo-div {
-		width: 100%;
-		min-height: 50px;
-		background-color: #f1b04c;
-		padding-left: 2%;
-		line-height: 20px;
-		margin-bottom: 10px;
-		display: flex;
-		align-items: center;
-		}
+#header-div {
+    display: flex;
+	justify-content: space-between;
+    align-items: center;
+    background-color: #f1b04c;
+    padding: 10px;
+    margin-bottom: 10px;
+	color: white;
+	background-image: url("header.jpg");
+}
 
-	#logo-div img {
-		margin-right: 5px; 
-		}
+#logo-div {
+    display: flex;
+    align-items: center;
+}
 
-	#nav-div {
-		width: 100%;
-		min-height: 50px;
-		padding: 2%;
-		background-color: #ee9f27;
-		text-align: center;
-		line-height: 20px;
-		margin-bottom: 10px;
-		}
-	#nav-div a{
-		margin: 0 10px;
-		text-decoration: none;
-		color: black;
-		border: 1px;
-		padding: 2px;
-		display: inline-block;
-		cursor: pointer;
-		border-radius: 5px;
-	}
+#logo-div img {
+    margin-right: 20px;
+}
 
-	#main-div{
-		width: 100%;
-		min-height: 400px;
-		text-align: center;
-		line-height: 30px;
-		margin-bottom: 10px;
-		}
-	#sidebar-div{
-		width: 20%;
-		min-height: 400px;
-		background-color: #ec9006;
-		float: left;
-		text-align: center;
-		line-height: 400px;
-		margin-bottom: 10px;
-		}
-	#bodyarea-div{
-		width: 75%;
-		min-height: 400px;
-		background-color: #e88504;
-		float: right;
-		text-align: center;
-		line-height: 400px;
-		margin-bottom: 10px;
-		}
-		.clearfix::after{
-			content:"";
-			display: block;
-			clear: both;
-	}
-	#footer-div{
-		width: 100%;
-		min-height: 50px;
-		background-color: #e27602;
-		line-height: 25px;
-	}
-	#wrapper-div{
-		width: 80%;
-		margin: auto;
-	}
+#burger-icon {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-toggler {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='white' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    width: 15x;
+    height: 15px;
+}
+
+#nav-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-grow: 1;
+    margin-left: 20px;
+}
+
+#nav-links {
+    display: flex;
+    justify-content: center;
+	flex-grow: 1;
+}
+
+#nav-div a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+
+.nav-button {
+    background-color: none;
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+	transition: box-shadow 0.3s ease;;
+}
+
+.nav-button:hover {
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.7);
+    color: black;
+}
+
+#subscribe-button{
+	background-color: #80ed99;
+	color: black; 
+	font-size: 14px;
+	transition: box-shadow 0.3s ease;
+	margin-right: 35px;
+}
+
+#subscribe-button:hover{
+	background-color: none; 
+	box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+#main-div {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+#sidebar-div {
+    width: 20%;
+    min-height: 400px;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-right: 5%;
+	color: white;
+	background-color: teal;
+}
+
+#bodyarea-div {
+    width: 75%;
+    min-height: 400px;
+	color: white;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+	background-color: teal;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#footer-div {
+    width: 100%;
+    min-height: 50px;
+    color: white;
+    line-height: 25px;
+    padding: 10px;
+    box-sizing: border-box;
+	background-color: teal;
+}
