@@ -4,50 +4,124 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BOK SQUARED</title>
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
-        <header id="header-div">
-            <div id="logo-div">
-                <img src="Logo_BokSquared.png" alt="Website Logo" width="200" height="75">
-            </div>
-			
-            <nav id="nav-div">
-                <div id="nav-links">
-                    <a class="nav-button" href="https://www.twitch.tv/">Overview</a>
-                    <a class="nav-button" href="https://www.skidrowcodex.net/">Games</a>
-                    <a class="nav-button" href="https://drive.google.com/drive/folders/1bXIl14sZRr17dYd1dWIWFOoL6UwbxZjh?usp=sharing">Digital Art</a>
-                </div>
-				<button id="subscribe-button" class="nav-button btn btn-sucess rounded-pill">Subscribe</button>
-				<div id="burger-icon">
-				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-				aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon"></span>
-					</button>
-				</div>
-            </nav>
-        </header>
-        <main id="main-div" class="clearfix">
-            <aside id="sidebar-div">
-                Game Categories
-            </aside>
-            <section id="bodyarea-div">
-                <p>This website offers gaming streams of multiple indie games from Skidrow Codex, Steam and VG Person. It also showcases digital art in multiple genres that can be used for references.</p>
-            </section>
-        </main>
-        <footer id="footer-div">
-            <table>
-                <tr>
-                    <td>Contact me:</td>
-                    <td>Email: <a href="mailto:thaeajapon31@gmail.com">thaeajapon31@gmail.com</a></td>
-                </tr>
-                <tr>
-                    <td>Telephone:</td>
-                    <td><a href="tel:+639776809068">+63 9776809068</a></td>
-                </tr>
-            </table>
-        </footer>
-		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<header id="header-div" class="d-flex justify-content-between align-items-center p-3">
+    <div id="logo-div">
+        <img src="Logo_BokSquared.png" alt="Website Logo" width="200" height="75">
+    </div>
+    <div class="d-flex align-items-center flex-grow-1 justify-content-lg-center">
+        <div id="nav-links" class="d-none d-lg-flex">
+            <a class="nav-link" href="https://www.twitch.tv/">Overview</a>
+            <a class="nav-link" href="https://www.skidrowcodex.net/">Skidrow Games</a>
+			<a class="nav-link" href="https://vgperson.com/games/">VG Person Games</a>
+			<a class="nav-link" href="https://github.com/BokSquared">GitHub Profile</a>
+            <a class="nav-link" href="https://drive.google.com/drive/folders/1bXIl14sZRr17dYd1dWIWFOoL6UwbxZjh?usp=sharing">Digital Art</a>
+        </div>
+        <button id="subscribe-button" class="nav-button btn btn-success rounded-pill me-3">Subscribe</button>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </div>
+</header>
+
+<nav id="nav-div">
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+            <img src="Logo_BokSquared.png" alt="Website Logo" width="200" height="75">
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="navbar-nav flex-grow-1">
+                <li class="nav-item">
+                    <a class="nav-link" href="https://www.twitch.tv/">Overview</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://www.skidrowcodex.net/">Skidrow Games</a>
+                </li>
+				<li class="nav-item">
+                    <a class="nav-link" href="https://vgperson.com/games/">VG Person Games</a>
+                </li>
+				<li class="nav-item">
+                    <a class="nav-link" href="https://github.com/BokSquared">GitHub Profile</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://drive.google.com/drive/folders/1bXIl14sZRr17dYd1dWIWFOoL6UwbxZjh?usp=sharing">Digital Art</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<main id="main-div" class="clearfix">
+    <aside id="sidebar-div">
+        Skidrow Games
+		<ul>
+			<li>
+				<a class="nav-link" href="https://www.skidrowcodex.net/lies-of-p-rune/">Lies of P</a>
+			</li>
+			<li>
+				<a class="nav-link" href="https://www.skidrowcodex.net/baldurs-gate-3-v4-1-1-4811634-gog/">Baldur's Gate 3</a>
+			</li>
+			<li>
+				<a class="nav-link" href="https://www.skidrowreloaded.com/sm-remastered-v2-616-0-0-repack/">Spider-Man Remastered</a>
+			</li>
+			<li>
+				<a class="nav-link" href="https://www.skidrowreloaded.com/wytchwood-v1-02-gog/">Wytchwood</a>
+			</li>
+		</ul>
+		VG Person Games
+		<ul>
+			<li>
+				<a class="nav-link" href="https://vgperson.com/games/ib.htm">Ib</a>
+			</li>
+			<li>
+				<a class="nav-link" href="https://vgperson.com/games/misao.htm">Misao</a>
+			</li>
+			<li>
+				<a class="nav-link" href="https://vgperson.com/games/graygarden.htm">Gray Garden</a>
+			</li>
+			<li>
+				<a class="nav-link" href="https://vgperson.com/games/wadanohara.htm">Wadanohara and the Great Blue Sea</a>
+			</li>
+			<li>
+				<a class="nav-link" href="https://vgperson.com/games/1beatheart.htm">1BeatHeart</a>
+			</li>
+		</ul>
+    </aside>
+    <section id="bodyarea-div">
+        <p>This website offers gaming streams of multiple indie games from Skidrow Codex, Steam and VG Person. It also showcases digital art in multiple genres that can be used for references.</p>
+		<img src="Image1.png" alt="Twitch" width="500" height="250">
+		<p>BokSquared shares his various indie and horror games in Twitch. See Overview.</p>
+		<p>[Insert Image 2-beside]</p>
+		<p>[Insert Image description 2-beside]</p>
+		<p>[Insert Image 2-beside]</p>
+		<p>[Insert Image description 2-beside]</p>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque suscipit dictum efficitur. Fusce tempor arcu at quam fermentum congue. Vivamus suscipit dictum ultricies. Vestibulum 
+		id dui sit amet sem rutrum semper. Cras consectetur orci a scelerisque sagittis. Nam interdum suscipit ligula, a blandit dolor ornare sed. Cras pellentesque, nulla a egestas ultricies, 
+		dolor augue aliquam elit, a pellentesque sem ante non ante. Suspendisse vitae odio sodales, luctus lectus et, tempor elit. Donec nec cursus tellus, in auctor lacus. Duis id molestie turpis, 
+		vitae suscipit risus. Vestibulum imperdiet finibus urna, eu egestas neque lacinia eu. Donec auctor id sapien vel eleifend. Mauris id porta eros, vitae viverra sapien. In accumsan arcu vel 
+		magna sagittis accumsan. Etiam mollis nisi eleifend lacinia dictum. Sed eget ipsum semper, feugiat lectus quis, iaculis nibh.</p>
+		<p>Nam et finibus justo. Suspendisse aliquam felis vitae maximus faucibus. Aliquam hendrerit non quam sollicitudin congue. Etiam quis turpis vel massa imperdiet vulputate non ac ex. Mauris 
+		et nulla massa. Phasellus sodales lacinia eros, imperdiet fermentum ligula viverra ut. Fusce a ipsum non nunc euismod dapibus. Maecenas finibus nulla in arcu viverra pretium. Morbi eleifend 
+		turpis arcu, vel ultricies lectus dapibus a. Etiam dignissim volutpat auctor. Etiam nec pellentesque purus. Pellentesque fermentum varius cursus. Vivamus vel ligula id diam maximus sodales. 
+		Proin egestas faucibus orci et interdum.</p>
+    </section>
+</main>
+
+<footer id="footer-div">
+	<div id="logo-footer-div">
+        <img src="Logo_BokSquared.png" alt="Website Logo" width="200" height="75">
+    </div>
+    <div id="footer-contact">
+		Althaea A. Japon:<br>
+		Email: <a href="mailto:thaeajapon31@gmail.com">thaeajapon31@gmail.com</a><br>
+        Telephone: <a href="tel:+639776809068">+63 9776809068</a>
+	</div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
