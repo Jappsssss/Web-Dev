@@ -111,6 +111,7 @@ body {
 #subscribe-button {
     background-color: #80ed99;
     color: black;
+	`fvegtgft
     font-size: 14px;
     transition: box-shadow 0.3s ease;
     margin-right: 35px;
@@ -160,6 +161,18 @@ body {
     padding: 20px;
     box-sizing: border-box;
     background-color: teal;
+}
+
+.image-container {
+	display: flex; 
+	flex-wrap: wrap; 
+	justify-content: center; 
+}
+
+.image-container img {
+	margin: 10px; 
+	width: 500px; 
+	height: 250px;
 }
 
 .clearfix::after {
